@@ -1,0 +1,19 @@
+# AvailableWidgetSorter
+#
+# Release 0.01 (Nov 21, 2010)
+#
+# Copyright (c) 2004-2010 Yujiro Araki
+
+name: AvailableWidgetSorter
+id: AvailableWidgetSorter
+version: 0.01
+author_link: http://www.koikikukan.com/
+author_name: Yujiro Araki
+plugin_link: http://github.com/koikikukan/mt-plugin-available-widget-sorter
+doc_link: http://www.koikikukan.com/archives/2010/11/22-000300.php
+l10n_lexicon:
+    ja:
+        AvailableWidgetSorter.: ウィジェットに表示される「利用可能」ウィジェットをソートします。
+description: <__trans phrase="AvailableWidgetSorter.">
+callbacks:
+    MT::App::CMS::template_param.edit_widget: $AvailableWidgetSorter::AvailableWidgetSorter::CMS::edit_template_param
