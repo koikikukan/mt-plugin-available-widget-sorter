@@ -1,8 +1,9 @@
 # AvailableWidgetSorter
 #
 # Release 0.01 (Nov 21, 2010)
+# Release 0.02 (Jan 05, 2011) add sort_order select.
 #
-# Copyright (c) 2004-2010 Yujiro Araki
+# Copyright (c) 2004-2011 Yujiro Araki
 
 name: AvailableWidgetSorter
 id: AvailableWidgetSorter
@@ -11,9 +12,17 @@ author_link: http://www.koikikukan.com/
 author_name: Yujiro Araki
 plugin_link: http://github.com/koikikukan/mt-plugin-available-widget-sorter
 doc_link: http://www.koikikukan.com/archives/2010/11/22-000300.php
+blog_config_template: config.tmpl
+settings:
+    sort_order:
+        scope: blog
+        default: 'ascend'
 l10n_lexicon:
     ja:
         AvailableWidgetSorter.: ウィジェットに表示される「利用可能」ウィジェットをソートします。
+        Sort of widget: ウィジェットの表示順序
+        ascend: 昇順
+        descend: 降順
 description: <__trans phrase="AvailableWidgetSorter.">
 callbacks:
     MT::App::CMS::template_param.edit_widget: $AvailableWidgetSorter::AvailableWidgetSorter::CMS::edit_template_param
